@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend</title>
+    <link rel="stylesheet" href="header.css" />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+        <img
+            src="https://deepthought.education/assets/images/logo/logo.svg"
+            alt="logo"
+        />
+        </div>
+        <div class="logotwo">
+        <i class="material-icons">home</i>
+        <i class="material-icons">construction</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons">account_circle</i>
+        <i class="material-icons">more_vert</i>
+        </div>
+        </div><br><br><br><br>
+        <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><p>Journey Board</p>☰</a>
+        <div class="dropdown">
+            <button class="dropbtn">1. demo task 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="./task_heading1.html"><li>task heading 1</li></a>
+            <a href="./task_heading2.html"><li>task heading 2</li></a>
+            <a href="./task_heading3.html"><li>task heading 3</li></a>
+            <a href="./task_heading4.html"><li>task heading 4</li></a>
+            <a href="./task_heading5.html"><li>task heading 5</li></a>
+            <a href="./task_heading6.html"><li>task heading 6</li></a>
+            <a href="./task_heading7.html"><li>task heading 7</li></a>
+            <a href="./task_heading8.html"><li>task heading 8</li></a>
+            <a href="./task_heading9.html"><li>task heading 9</li></a>
+            </div>
+        </div> 
+        </div>
+
+        <div id="main">
+        <button class="openbtn" onclick="openNav()">☰</button> 
+        </div>
+
+        <div class="centretask">
+            <div class="bigcards">
+                <div class="blueheading">You are Taking Challenges Of New Project</div>
+                <div class="smallcard2">
+                <p class="blackheading">Task Heading 2</p>
+                <p class="task2heading1">
+                    Thread A
+                    <div class="subthread">
+                        <p class="subthread1">
+                            Sub Thread 1
+                        </p>
+                        <div class="text">
+                            <p class="entertext">
+                                Enter Text Here
+                            </p>
+                        </div>
+                    </div>
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="pagelastbutton">
+            <a href="./task_heading3.html">
+                <button class="lastbutton">Next</button>
+            </a>
+        </div>
+        <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+    </body>
+</html>
